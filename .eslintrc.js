@@ -5,4 +5,7 @@ module.exports = {
     es2021: true,
   },
   extends: ["eslint:recommended", "prettier"],
+  rules: {
+    "no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
+  },
 };
